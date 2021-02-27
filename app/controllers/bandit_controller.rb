@@ -1,0 +1,2 @@
+class BanditController < ApplicationController
+end
