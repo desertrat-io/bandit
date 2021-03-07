@@ -1,8 +1,11 @@
+# frozen_string_literal: true
 module Api
   module V1
-    class DataController < BaseController
+    class DataController < ApiController
+      before_action :doorkeeper_authorize!
+      respond_to? :json
       def show
-        respond_with({ super_secret: 'oauth_data' })
+        respond({ rails_docs: 'suck' })
       end
     end
   end
