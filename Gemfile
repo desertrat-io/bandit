@@ -12,6 +12,8 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 gem 'doorkeeper'
 gem 'pg'
 group :test do
+  gem 'factory_bot_rails'
+  gem 'rake'
   gem 'rspec-rails'
 end
 group :development, :test do
